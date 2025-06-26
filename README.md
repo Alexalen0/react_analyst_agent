@@ -1,46 +1,75 @@
-# Getting Started with Create React App
+# Data Analyst App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, interactive web application for data analysis and visualization. Built with React, TypeScript, Material UI, and powerful data processing libraries, this app enables users to upload, process, and analyze various file types (CSV, Excel, PDF, DOCX, images) and visualize insights with beautiful charts.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **File Upload & Processing:** Supports TXT, DOCX, PDF, CSV, XLSX, PNG, JPG, JPEG files.
+- **Data Extraction:** Extracts text and tabular data from documents and images (OCR).
+- **AI Integration:** Connects to Llama-3.3-70B-Instruct-Turbo-Free for natural language analysis (API key required).
+- **Data Visualization:** Interactive charts using Plotly.js and Nivo.
+- **Modern UI:** Responsive, glassmorphic design with Material UI and custom themes.
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Prerequisites
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Node.js (v16 or later recommended)
+- npm or yarn
 
-### `npm test`
+### Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm install
+# or
+yarn install
+```
 
-### `npm run build`
+### Running the App
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm start
+# or
+yarn start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The app will be available at [http://localhost:3000](http://localhost:3000).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Building for Production
 
-### `npm run eject`
+```bash
+npm run build
+# or
+yarn build
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Usage
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Upload a supported file (CSV, Excel, PDF, DOCX, image, etc.).
+2. The app extracts and displays the content.
+3. Enter your query or analysis prompt (optionally using your API key for AI features).
+4. View answers and interactive visualizations.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Project Structure
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- `src/` — Main source code
+  - `App.tsx` — Main app component
+  - `services/` — File processing and API integration
+  - `types.ts` — TypeScript types
+- `public/` — Static assets and HTML
 
-## Learn More
+## Dependencies
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- React, TypeScript
+- Material UI (MUI)
+- Plotly.js, react-plotly.js
+- @nivo/bar, @nivo/line
+- Axios, Tesseract.js, Mammoth, xlsx, pdfjs-dist
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+_Created with [Create React App](https://github.com/facebook/create-react-app)_
